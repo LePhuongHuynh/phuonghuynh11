@@ -1,0 +1,109 @@
+/* Reset cơ bản cho trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style cho body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Banner động */
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade {
+    animation: fadeAnimation 15s infinite;
+}
+
+@keyframes fadeAnimation {
+    0%, 33.3% {
+        opacity: 1;
+    }
+    66.6%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Phần GIF */
+#gif {
+    margin-top: 30px;
+}
+
+#gif img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Phần Home */
+.home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hover-effect {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
